@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -fPIC -std=c++11  -shared -Wl,-soname,libgmock_main.so -o ../lib/libgmock_main.so CMakeFiles/gmock_main.dir/src/gmock_main.cc.o  -Wl,-rpath,/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/build_isolated/unitree_legged_real/gtest/lib ../lib/libgmock.so ../lib/libgtest.so -lpthread 

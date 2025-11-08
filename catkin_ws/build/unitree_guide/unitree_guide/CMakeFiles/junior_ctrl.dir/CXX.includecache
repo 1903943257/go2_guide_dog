@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/src/unitree_guide/unitree_guide/src/FSM/fsm_copy.cpp
+

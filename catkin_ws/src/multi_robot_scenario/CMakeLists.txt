@@ -9,6 +9,8 @@ project(multi_robot_scenario)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   xacro
+  roscpp
+  # unitree_legged_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -116,6 +118,8 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  # /home/sanshiqi/project/DRL-robot-navigation/catkin_ws/src/unitree_ros_to_real/unitree_legged_sdk/include
+
 )
 
 ## Declare a C++ library

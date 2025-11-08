@@ -63,6 +63,7 @@ action_dim = 2
 network = TD3(state_dim, action_dim)
 try:
     network.load(file_name, "./pytorch_models")
+    # network.load(file_name, "./with_human_models/new_area")
 except:
     raise ValueError("Could not load the stored model parameters")
 
@@ -75,7 +76,7 @@ while True:
     action = network.get_action(np.array(state))
 
     # Update action to fall in range [0,1] for linear velocity and [-1,1] for angular velocity
-    a_in = [(action[0] + 1) / 2, action[1]]
+    a_in = [(action[0] + 1) / 4, action[1] / 4]  # 修改为：线速度[0，0.33]，角速度[-0.25，0.25]
     next_state, reward, done, target = env.step(a_in)
     done = 1 if episode_timesteps + 1 == max_ep else int(done)
 

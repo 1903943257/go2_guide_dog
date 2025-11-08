@@ -1,0 +1,1002 @@
+[
+    {
+        "episode_id": 1,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 22.002861261367798,
+        "path_length": 1.903175911909112,
+        "linear_jerk_avg": 0.031746031746031744,
+        "angular_jerk_avg": 0.10209092426867712
+    },
+    {
+        "episode_id": 2,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 13.449797868728638,
+        "path_length": 2.3609978610101803,
+        "linear_jerk_avg": 0.02564102564102564,
+        "angular_jerk_avg": 0.14762590137811807
+    },
+    {
+        "episode_id": 3,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 23.080564498901367,
+        "path_length": 3.0334133287369798,
+        "linear_jerk_avg": 0.045454545454545456,
+        "angular_jerk_avg": 0.09090909158641641
+    },
+    {
+        "episode_id": 4,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 31.56848692893982,
+        "path_length": 4.403791610806617,
+        "linear_jerk_avg": 0.04444444444444444,
+        "angular_jerk_avg": 0.23648713479439418
+    },
+    {
+        "episode_id": 5,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 18.98770761489868,
+        "path_length": 3.9619139704776036,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.30487410437005263
+    },
+    {
+        "episode_id": 6,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 53.423996925354004,
+        "path_length": 5.67158358318776,
+        "linear_jerk_avg": 0.0261437908496732,
+        "angular_jerk_avg": 0.45534623619716835
+    },
+    {
+        "episode_id": 7,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 38.817745208740234,
+        "path_length": 7.031155777150839,
+        "linear_jerk_avg": 0.10810816502785897,
+        "angular_jerk_avg": 0.19040973202602282
+    },
+    {
+        "episode_id": 8,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 16.918074369430542,
+        "path_length": 3.1629198653927917,
+        "linear_jerk_avg": 0.08332717915376027,
+        "angular_jerk_avg": 0.2893163375556469
+    },
+    {
+        "episode_id": 9,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.979816198349,
+        "path_length": 1.902432450202774,
+        "linear_jerk_avg": 0.12698394060134888,
+        "angular_jerk_avg": 0.047619047619047616
+    },
+    {
+        "episode_id": 10,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 13.646474123001099,
+        "path_length": 2.1370128712396856,
+        "linear_jerk_avg": 0.2050407391328078,
+        "angular_jerk_avg": 0.34541051204387957
+    },
+    {
+        "episode_id": 11,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 17.564732313156128,
+        "path_length": 1.5029617579093122,
+        "linear_jerk_avg": 0.0784313725490196,
+        "angular_jerk_avg": 0.058823529411764705
+    },
+    {
+        "episode_id": 12,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 22.96763300895691,
+        "path_length": 2.9608348790600045,
+        "linear_jerk_avg": 0.2424238613157561,
+        "angular_jerk_avg": 0.06818569519303062
+    },
+    {
+        "episode_id": 13,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 16.94822096824646,
+        "path_length": 1.491366745406165,
+        "linear_jerk_avg": 0.1658867324392001,
+        "angular_jerk_avg": 0.03125
+    },
+    {
+        "episode_id": 14,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.99589776992798,
+        "path_length": 3.429588746448479,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.4302656967192888
+    },
+    {
+        "episode_id": 15,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 15.536899328231812,
+        "path_length": 1.4150280412357332,
+        "linear_jerk_avg": 0.08832297854953342,
+        "angular_jerk_avg": 0.1
+    },
+    {
+        "episode_id": 16,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 10.416645526885986,
+        "path_length": 1.9515570003986706,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.35575136840343474
+    },
+    {
+        "episode_id": 17,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 14.553568840026855,
+        "path_length": 0.598285580627207,
+        "linear_jerk_avg": 0.09523809523809523,
+        "angular_jerk_avg": 0.01450476688998086
+    },
+    {
+        "episode_id": 18,
+        "collision": true,
+        "human_collision": false,
+        "success": false,
+        "time_cost": 24.907188653945923,
+        "path_length": 3.085300688164747,
+        "linear_jerk_avg": 0.10595403694444232,
+        "angular_jerk_avg": 0.1835749726742506
+    },
+    {
+        "episode_id": 19,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.31687307357788,
+        "path_length": 1.0181391352440055,
+        "linear_jerk_avg": 0.166587029894193,
+        "angular_jerk_avg": 0.050726888701319695
+    },
+    {
+        "episode_id": 20,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 26.183855056762695,
+        "path_length": 4.42173741808371,
+        "linear_jerk_avg": 0.05333327054977417,
+        "angular_jerk_avg": 0.24973673284053802
+    },
+    {
+        "episode_id": 21,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 20.806013107299805,
+        "path_length": 2.0127548923553134,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.04996882528066635
+    },
+    {
+        "episode_id": 22,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 13.755810260772705,
+        "path_length": 2.2524627689033188,
+        "linear_jerk_avg": 0.10256410256410256,
+        "angular_jerk_avg": 0.26908699021889615
+    },
+    {
+        "episode_id": 23,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 17.71604061126709,
+        "path_length": 3.686654379696539,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.3224488163695616
+    },
+    {
+        "episode_id": 24,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 14.584389686584473,
+        "path_length": 3.0091833168573934,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.43997802159615923
+    },
+    {
+        "episode_id": 25,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 13.439266920089722,
+        "path_length": 2.5439586025082543,
+        "linear_jerk_avg": 0.10256410256410256,
+        "angular_jerk_avg": 0.4997916347705401
+    },
+    {
+        "episode_id": 26,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.267743110656738,
+        "path_length": 1.2853937067034933,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.3746705763041973
+    },
+    {
+        "episode_id": 27,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 12.657253980636597,
+        "path_length": 2.4904408479715343,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.49999967341621715
+    },
+    {
+        "episode_id": 28,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 22.76897954940796,
+        "path_length": 2.371312724732699,
+        "linear_jerk_avg": 0.166665101593191,
+        "angular_jerk_avg": 0.3874604559757493
+    },
+    {
+        "episode_id": 29,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 18.698358058929443,
+        "path_length": 1.4336940394942346,
+        "linear_jerk_avg": 0.09259184863832262,
+        "angular_jerk_avg": 0.36197541488541496
+    },
+    {
+        "episode_id": 30,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 20.73845863342285,
+        "path_length": 3.659985081102611,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.2793579898774624
+    },
+    {
+        "episode_id": 31,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 35.62479019165039,
+        "path_length": 4.778107269543006,
+        "linear_jerk_avg": 0.0392156862745098,
+        "angular_jerk_avg": 0.24918937858413248
+    },
+    {
+        "episode_id": 32,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 11.342947244644165,
+        "path_length": 1.301330382550124,
+        "linear_jerk_avg": 0.2422870469815803,
+        "angular_jerk_avg": 0.12718546255068344
+    },
+    {
+        "episode_id": 33,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 15.604275465011597,
+        "path_length": 3.3058566655747965,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.3917468359073003
+    },
+    {
+        "episode_id": 34,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 26.903440237045288,
+        "path_length": 2.9525134312912193,
+        "linear_jerk_avg": 0.05128205051788917,
+        "angular_jerk_avg": 0.2108600214123726
+    },
+    {
+        "episode_id": 35,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 10.455639839172363,
+        "path_length": 0.9787869554150626,
+        "linear_jerk_avg": 0.13333333333333333,
+        "angular_jerk_avg": 0.05
+    },
+    {
+        "episode_id": 36,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 20.672436475753784,
+        "path_length": 2.7553546221916183,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.19033318758010864
+    },
+    {
+        "episode_id": 37,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.819355249404907,
+        "path_length": 0.3546067732336642,
+        "linear_jerk_avg": 0.0625,
+        "angular_jerk_avg": 0.125
+    },
+    {
+        "episode_id": 38,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 14.674619436264038,
+        "path_length": 1.1772937833400006,
+        "linear_jerk_avg": 0.19047619047619047,
+        "angular_jerk_avg": 0.0
+    },
+    {
+        "episode_id": 39,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 23.060336112976074,
+        "path_length": 3.2430409725293856,
+        "linear_jerk_avg": 0.07575757575757575,
+        "angular_jerk_avg": 0.20443185486576773
+    },
+    {
+        "episode_id": 40,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 22.896955966949463,
+        "path_length": 4.9566000460385435,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.36451358077200974
+    },
+    {
+        "episode_id": 41,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 31.26905870437622,
+        "path_length": 5.300771938650724,
+        "linear_jerk_avg": 0.08883957001898023,
+        "angular_jerk_avg": 0.14172218243281046
+    },
+    {
+        "episode_id": 42,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 35.32990860939026,
+        "path_length": 4.618741454052245,
+        "linear_jerk_avg": 0.0392156862745098,
+        "angular_jerk_avg": 0.23427089610520532
+    },
+    {
+        "episode_id": 43,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 9.4483482837677,
+        "path_length": 1.7929970724562545,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.3885389003488753
+    },
+    {
+        "episode_id": 44,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.349243640899658,
+        "path_length": 1.6397118116728224,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.41464347764849663
+    },
+    {
+        "episode_id": 45,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 29.168379306793213,
+        "path_length": 3.9099911883305487,
+        "linear_jerk_avg": 0.047619047619047616,
+        "angular_jerk_avg": 0.2739023841568269
+    },
+    {
+        "episode_id": 46,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 15.55124044418335,
+        "path_length": 3.144095643019544,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.08377517143574854
+    },
+    {
+        "episode_id": 47,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 29.344703674316406,
+        "path_length": 3.730463643667192,
+        "linear_jerk_avg": 0.08333333333333334,
+        "angular_jerk_avg": 0.09954401957137245
+    },
+    {
+        "episode_id": 48,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 23.899213314056396,
+        "path_length": 2.0631127765633517,
+        "linear_jerk_avg": 0.07246376811594202,
+        "angular_jerk_avg": 0.06521739130434782
+    },
+    {
+        "episode_id": 49,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 11.424084663391113,
+        "path_length": 0.2797099899759486,
+        "linear_jerk_avg": 0.09090909090909091,
+        "angular_jerk_avg": 0.045454545454545456
+    },
+    {
+        "episode_id": 50,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 25.888160943984985,
+        "path_length": 2.5887347047094167,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.11933673143386841
+    },
+    {
+        "episode_id": 51,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 29.026551246643066,
+        "path_length": 2.9038410353975004,
+        "linear_jerk_avg": 0.09523731328192211,
+        "angular_jerk_avg": 0.10703177962984357
+    },
+    {
+        "episode_id": 52,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 14.657410621643066,
+        "path_length": 2.4046079361780777,
+        "linear_jerk_avg": 0.19047619047619047,
+        "angular_jerk_avg": 0.3214285650423595
+    },
+    {
+        "episode_id": 53,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 9.34751582145691,
+        "path_length": 1.3523404850909306,
+        "linear_jerk_avg": 0.1111111111111111,
+        "angular_jerk_avg": 0.05555555555555555
+    },
+    {
+        "episode_id": 54,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 24.21919345855713,
+        "path_length": 2.8102633478077848,
+        "linear_jerk_avg": 0.07246376811594202,
+        "angular_jerk_avg": 0.217375662015832
+    },
+    {
+        "episode_id": 55,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 31.175793170928955,
+        "path_length": 6.832439733912446,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.25660743017991383
+    },
+    {
+        "episode_id": 56,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.6196186542511,
+        "path_length": 3.097886169782694,
+        "linear_jerk_avg": 0.08333333333333333,
+        "angular_jerk_avg": 0.4909968227148056
+    },
+    {
+        "episode_id": 57,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 12.392753601074219,
+        "path_length": 1.9380646389423288,
+        "linear_jerk_avg": 0.11111110945542653,
+        "angular_jerk_avg": 0.04021579027175903
+    },
+    {
+        "episode_id": 58,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 17.6741361618042,
+        "path_length": 1.2988881790182667,
+        "linear_jerk_avg": 0.1568627450980392,
+        "angular_jerk_avg": 0.11764705882352941
+    },
+    {
+        "episode_id": 59,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 11.395744323730469,
+        "path_length": 1.8160217749736234,
+        "linear_jerk_avg": 0.1212121212121212,
+        "angular_jerk_avg": 0.0
+    },
+    {
+        "episode_id": 60,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 20.817277669906616,
+        "path_length": 3.3235468848284357,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.3499934129416943
+    },
+    {
+        "episode_id": 61,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.77077865600586,
+        "path_length": 1.1539671989408269,
+        "linear_jerk_avg": 0.06349206349206349,
+        "angular_jerk_avg": 0.04761929384299687
+    },
+    {
+        "episode_id": 62,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 20.849408388137817,
+        "path_length": 1.4805261190097188,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.1
+    },
+    {
+        "episode_id": 63,
+        "collision": false,
+        "human_collision": false,
+        "success": false,
+        "time_cost": 207.51701283454895,
+        "path_length": 14.019675833555393,
+        "linear_jerk_avg": 0.08305400560299554,
+        "angular_jerk_avg": 0.5111987872421742
+    },
+    {
+        "episode_id": 64,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 6.244117021560669,
+        "path_length": 0.1153811493089229,
+        "linear_jerk_avg": 0.014506860739654966,
+        "angular_jerk_avg": 0.25
+    },
+    {
+        "episode_id": 65,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 24.23175811767578,
+        "path_length": 3.69932664894542,
+        "linear_jerk_avg": 0.04033870260784591,
+        "angular_jerk_avg": 0.3243222204239472
+    },
+    {
+        "episode_id": 66,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 11.558850526809692,
+        "path_length": 0.9166589219364578,
+        "linear_jerk_avg": 0.12121078281691579,
+        "angular_jerk_avg": 0.04545447636734356
+    },
+    {
+        "episode_id": 67,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 9.539329290390015,
+        "path_length": 1.7719004969473482,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.14622464113765293
+    },
+    {
+        "episode_id": 68,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.6696355342865,
+        "path_length": 1.3674692000052735,
+        "linear_jerk_avg": 0.16666666666666666,
+        "angular_jerk_avg": 0.15625
+    },
+    {
+        "episode_id": 69,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 18.81324005126953,
+        "path_length": 2.096047755251344,
+        "linear_jerk_avg": 0.06882010786621659,
+        "angular_jerk_avg": 0.27754858053392834
+    },
+    {
+        "episode_id": 70,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 14.679528951644897,
+        "path_length": 2.1499713272911865,
+        "linear_jerk_avg": 0.09523809523809523,
+        "angular_jerk_avg": 0.17592253535985947
+    },
+    {
+        "episode_id": 71,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 24.938036918640137,
+        "path_length": 3.1834783343481123,
+        "linear_jerk_avg": 0.05555555555555555,
+        "angular_jerk_avg": 0.14117329629758993
+    },
+    {
+        "episode_id": 72,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 7.411492347717285,
+        "path_length": 0.5658294216699582,
+        "linear_jerk_avg": 0.14285714285714285,
+        "angular_jerk_avg": 0.16635785145418985
+    },
+    {
+        "episode_id": 73,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.04144549369812,
+        "path_length": 4.050065763497288,
+        "linear_jerk_avg": 0.08333333333333333,
+        "angular_jerk_avg": 0.1749860681593418
+    },
+    {
+        "episode_id": 74,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.374835014343262,
+        "path_length": 1.4067466747349338,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.18746835924685
+    },
+    {
+        "episode_id": 75,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 32.276638984680176,
+        "path_length": 4.652226827779724,
+        "linear_jerk_avg": 0.04301075268817204,
+        "angular_jerk_avg": 0.2699302069602474
+    },
+    {
+        "episode_id": 76,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.297433614730835,
+        "path_length": 0.5098954717091688,
+        "linear_jerk_avg": 0.125,
+        "angular_jerk_avg": 0.1875
+    },
+    {
+        "episode_id": 77,
+        "collision": false,
+        "human_collision": true,
+        "success": false,
+        "time_cost": 11.345094442367554,
+        "path_length": 0.9162401412528647,
+        "linear_jerk_avg": 0.1515151515151515,
+        "angular_jerk_avg": 0.09090909090909091
+    },
+    {
+        "episode_id": 78,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 20.781699419021606,
+        "path_length": 1.4912414397301148,
+        "linear_jerk_avg": 0.06666666666666667,
+        "angular_jerk_avg": 0.0
+    },
+    {
+        "episode_id": 79,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.875027418136597,
+        "path_length": 1.4459934213000794,
+        "linear_jerk_avg": 0.23809523809523808,
+        "angular_jerk_avg": 0.0
+    },
+    {
+        "episode_id": 80,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 25.91312551498413,
+        "path_length": 5.5297909710210105,
+        "linear_jerk_avg": 0.013333333333333332,
+        "angular_jerk_avg": 0.31469263195991515
+    },
+    {
+        "episode_id": 81,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 28.319873332977295,
+        "path_length": 2.9595425364550714,
+        "linear_jerk_avg": 0.04938271604938271,
+        "angular_jerk_avg": 0.20207865481023435
+    },
+    {
+        "episode_id": 82,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.65232563018799,
+        "path_length": 1.686072782025822,
+        "linear_jerk_avg": 0.12698412698412698,
+        "angular_jerk_avg": 0.06412283153761
+    },
+    {
+        "episode_id": 83,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 36.61217451095581,
+        "path_length": 4.935390403546361,
+        "linear_jerk_avg": 0.03809523809523809,
+        "angular_jerk_avg": 0.32728380816323416
+    },
+    {
+        "episode_id": 84,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 9.302330017089844,
+        "path_length": 1.076642716980297,
+        "linear_jerk_avg": 0.2962962962962963,
+        "angular_jerk_avg": 0.0
+    },
+    {
+        "episode_id": 85,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 15.493069171905518,
+        "path_length": 1.1826035289016306,
+        "linear_jerk_avg": 0.15536421802308822,
+        "angular_jerk_avg": 0.06666666666666667
+    },
+    {
+        "episode_id": 86,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 27.985615015029907,
+        "path_length": 2.7341159693735118,
+        "linear_jerk_avg": 0.20987654320987653,
+        "angular_jerk_avg": 0.2406981830243711
+    },
+    {
+        "episode_id": 87,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 8.254173517227173,
+        "path_length": 1.3135084377909214,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.31235817447304726
+    },
+    {
+        "episode_id": 88,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 40.87911248207092,
+        "path_length": 7.150375842951443,
+        "linear_jerk_avg": 0.09401708841323854,
+        "angular_jerk_avg": 0.2268597376652253
+    },
+    {
+        "episode_id": 89,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 18.71798324584961,
+        "path_length": 2.3343053866584547,
+        "linear_jerk_avg": 0.09259259259259259,
+        "angular_jerk_avg": 0.13870139999522102
+    },
+    {
+        "episode_id": 90,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 9.268991231918335,
+        "path_length": 1.5883838443554592,
+        "linear_jerk_avg": 0.0,
+        "angular_jerk_avg": 0.44307224121358657
+    },
+    {
+        "episode_id": 91,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 22.932206392288208,
+        "path_length": 2.7080826508536937,
+        "linear_jerk_avg": 0.0606060606060606,
+        "angular_jerk_avg": 0.08970342576503754
+    },
+    {
+        "episode_id": 92,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.935901880264282,
+        "path_length": 1.5601597290676792,
+        "linear_jerk_avg": 0.12698375800299266,
+        "angular_jerk_avg": 0.07142857142857142
+    },
+    {
+        "episode_id": 93,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.798160791397095,
+        "path_length": 1.95071914953283,
+        "linear_jerk_avg": 0.08333333333333333,
+        "angular_jerk_avg": 0.2803697930648923
+    },
+    {
+        "episode_id": 94,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 21.11613917350769,
+        "path_length": 1.7729840099822969,
+        "linear_jerk_avg": 0.06876427034536996,
+        "angular_jerk_avg": 0.07653560191392898
+    },
+    {
+        "episode_id": 95,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 11.42182207107544,
+        "path_length": 1.1378803238825455,
+        "linear_jerk_avg": 0.2727272727272727,
+        "angular_jerk_avg": 0.08253246681256728
+    },
+    {
+        "episode_id": 96,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 31.381065845489502,
+        "path_length": 3.749132641474362,
+        "linear_jerk_avg": 0.16666666666666663,
+        "angular_jerk_avg": 0.2499989837408066
+    },
+    {
+        "episode_id": 97,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 16.684293031692505,
+        "path_length": 0.874014271871453,
+        "linear_jerk_avg": 0.25404267820219195,
+        "angular_jerk_avg": 0.09375
+    },
+    {
+        "episode_id": 98,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 154.6905026435852,
+        "path_length": 5.474610530231447,
+        "linear_jerk_avg": 0.020126130156869055,
+        "angular_jerk_avg": 0.8187396904366129
+    },
+    {
+        "episode_id": 99,
+        "collision": false,
+        "human_collision": false,
+        "success": true,
+        "time_cost": 24.228175401687622,
+        "path_length": 2.646036067797815,
+        "linear_jerk_avg": 0.11594202812167183,
+        "angular_jerk_avg": 0.23911249767179074
+    },
+    {
+        "episode_id": 100,
+        "collision": true,
+        "human_collision": false,
+        "success": false,
+        "time_cost": 40.53770852088928,
+        "path_length": 8.271911347231937,
+        "linear_jerk_avg": 0.034188034188034185,
+        "angular_jerk_avg": 0.2760909237922766
+    }
+]

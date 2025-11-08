@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/laikago_description/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/aliengoZ1_description
+
+Name: aliengoZ1_description
+Description: Description of aliengoZ1_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

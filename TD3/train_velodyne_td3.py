@@ -19,12 +19,13 @@ def evaluate(network, epoch, eval_episodes=10):
         count = 0
         state = env.reset()
         done = False
-        while not done and count < 501:
+        while not done and count < 200:
             action = network.get_action(np.array(state))
-            a_in = [(action[0] + 1) / 2, action[1]]
+            a_in = [(action[0] + 1) / 6, action[1] / 4]
             state, reward, done, _ = env.step(a_in)
             avg_reward += reward
             count += 1
+            print("count: ", count,"reward: ",  reward)
             if reward < -90:
                 col += 1
     avg_reward /= eval_episodes
@@ -107,8 +108,25 @@ class TD3(object):
         self.iter_count = 0
 
     def get_action(self, state):
+        # has_nan = False
+        # for name, param in self.actor.named_parameters():
+        #     if torch.isnan(param).any():
+        #         print(f"Actor weight {name} contains NaN! Resetting...")
+        #         # 重置该层权重
+        #         if "layer_1" in name:
+        #             self.actor.layer_1.reset_parameters()
+        #         elif "layer_2" in name:
+        #             self.actor.layer_2.reset_parameters()
+        #         elif "layer_3" in name:
+        #             self.actor.layer_3.reset_parameters()
+        #         has_nan = True
+        
+        # if has_nan:
+        #     return np.array([0.0, 0.0])  # 返回安全动作
         # Function to get the action from the actor
         state = torch.Tensor(state.reshape(1, -1)).to(device)
+        # print("state: ", state)
+        # print("get_action_output: ", self.actor(state).cpu().data.numpy().flatten())
         return self.actor(state).cpu().data.numpy().flatten()
 
     # training cycle
@@ -222,10 +240,10 @@ seed = 0  # Random seed number
 eval_freq = 5e3  # After how many steps to perform the evaluation
 max_ep = 500  # maximum number of steps per episode
 eval_ep = 10  # number of episodes for evaluation
-max_timesteps = 5e6  # Maximum number of steps to perform
-expl_noise = 1  # Initial exploration noise starting value in range [expl_min ... 1]
+max_timesteps = 5e5  # Maximum number of steps to perform
+expl_noise = 0.5  # Initial exploration noise starting value in range [expl_min ... 1]
 expl_decay_steps = (
-    500000  # Number of steps over which the initial exploration noise will decay over
+    1e4  # Number of steps over which the initial exploration noise will decay over
 )
 expl_min = 0.1  # Exploration noise after the decay in range [0...expl_noise]
 batch_size = 40  # Size of the mini-batch
@@ -237,14 +255,16 @@ policy_freq = 2  # Frequency of Actor network updates
 buffer_size = 1e6  # Maximum size of the buffer
 file_name = "TD3_velodyne"  # name of the file to store the policy
 save_model = True  # Weather to save the model or not
-load_model = False  # Weather to load a stored model
+load_model = True  # Weather to load a stored model
 random_near_obstacle = True  # To take random actions near obstacles or not
 
 # Create the network storage folders
 if not os.path.exists("./results"):
     os.makedirs("./results")
-if save_model and not os.path.exists("./pytorch_models"):
-    os.makedirs("./pytorch_models")
+if save_model and not os.path.exists("./with_human_final_models"):
+    os.makedirs("./with_human_final_models")
+# if save_model and not os.path.exists("./pytorch_models"):
+#     os.makedirs("./pytorch_models")
 
 # Create the training environment
 environment_dim = 20
@@ -263,7 +283,8 @@ network = TD3(state_dim, action_dim, max_action)
 replay_buffer = ReplayBuffer(buffer_size, seed)
 if load_model:
     try:
-        network.load(file_name, "./pytorch_models")
+        # network.load(file_name, "./pytorch_models")
+        network.load(file_name, "./with_human_final_models")
     except:
         print(
             "Could not load the stored model parameters, initializing training with random parameters"
@@ -304,12 +325,14 @@ while timestep < max_timesteps:
             evaluations.append(
                 evaluate(network=network, epoch=epoch, eval_episodes=eval_ep)
             )
-            network.save(file_name, directory="./pytorch_models")
+            # network.save(file_name, directory="./pytorch_models")
+            network.save(file_name, directory="./with_human_final_models")
             np.save("./results/%s" % (file_name), evaluations)
             epoch += 1
 
         state = env.reset()
         done = False
+        # state = env.reset() 
 
         episode_reward = 0
         episode_timesteps = 0
@@ -342,8 +365,8 @@ while timestep < max_timesteps:
             action[0] = -1
 
     # Update action to fall in range [0,1] for linear velocity and [-1,1] for angular velocity
-    a_in = [(action[0] + 1) / 2, action[1]]
-    next_state, reward, done, target = env.step(a_in)
+    a_in = [(action[0] + 1) / 6, action[1] / 4]    # x方向线速度[0, 0.33]，　角速度[-0.25, 0.25]
+    next_state, reward, done, target = env.step(a_in)  
     done_bool = 0 if episode_timesteps + 1 == max_ep else int(done)
     done = 1 if episode_timesteps + 1 == max_ep else int(done)
     episode_reward += reward
@@ -358,7 +381,16 @@ while timestep < max_timesteps:
     timesteps_since_eval += 1
 
 # After the training is done, evaluate the network and save it
+# evaluations.append(evaluate(network=network, epoch=epoch, eval_episodes=eval_ep))
+# if save_model:
+#     network.save("%s" % file_name, directory="./models")
+# np.save("./results/%s" % file_name, evaluations)
+
 evaluations.append(evaluate(network=network, epoch=epoch, eval_episodes=eval_ep))
 if save_model:
-    network.save("%s" % file_name, directory="./models")
+    # 检查保存模型的目录是否存在，如果不存在则创建
+    model_dir = "./models"
+    if not os.path.exists(model_dir):
+        os.makedirs(model_dir)
+    network.save("%s" % file_name, directory=model_dir)
 np.save("./results/%s" % file_name, evaluations)

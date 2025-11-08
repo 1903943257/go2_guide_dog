@@ -1,0 +1,20 @@
+<!-- 已弃用 -->
+<launch>
+  <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+    <param name="output_frame" value="odom"/>
+    <param name="base_footprint_frame" value="base_footprint"/>
+    <param name="frequency" value="30.0"/>
+    <param name="sensor_timeout" value="1.0"/>
+    <param name="odom_used" value="true"/>
+    <param name="imu_used" value="true"/>
+    <param name="vo_used" value="false"/>
+    <param name="debug" value="false"/>
+    <param name="self_diagnose" value="false"/>
+    
+    <!--  remap你的话题到EKF期望的输入话题  -->
+    <remap from="odom" to="/odom" />      <!-- 你的里程计话题 -->
+    <remap from="imu_data" to="/trunk_imu" /> <!-- 你的IMU话题 -->
+  </node>
+</launch>
+
+<!-- 已弃用 -->

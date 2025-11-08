@@ -1,0 +1,8 @@
+prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/install_isolated
+
+Name: unitree_motor_ctrl
+Description: Description of unitree_motor_ctrl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/unitree_controller/lib/unitree_controller/unitree_servo"
+  "/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/unitree_controller/lib/unitree_controller/unitree_servo.pdb"
+  "CMakeFiles/unitree_servo.dir/src/servo.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/unitree_servo.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

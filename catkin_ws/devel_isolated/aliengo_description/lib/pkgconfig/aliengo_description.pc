@@ -1,0 +1,8 @@
+prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/aliengo_description
+
+Name: aliengo_description
+Description: Description of aliengo_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

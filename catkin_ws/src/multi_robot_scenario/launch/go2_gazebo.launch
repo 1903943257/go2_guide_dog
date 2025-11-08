@@ -1,0 +1,86 @@
+<launch>
+
+  <arg name="robot_name" default="go2" />
+  <arg name="robot_position" default="-x -0.0 -y 0.0 -z 0.01" />
+  <!-- 设置机器人名称 -->
+  <param name="robot_name" value="go2"/>  
+  <param name="/use_sim_time" value="true"/>
+
+    <!-- 启动gazebo仿真环境 -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="world_name" value="$(find multi_robot_scenario)/launch/TD3.world"/>
+      <arg name="paused" value="false"/>
+      <arg name="use_sim_time" value="true"/>
+      <arg name="gui" value="true"/>
+      <arg name="headless" value="false"/>
+      <arg name="debug" value="false"/>
+    </include>
+
+    <!-- Load the URDF into the ROS Parameter Server -->
+    <param name="robot_description" command="$(find xacro)/xacro '$(find multi_robot_scenario)/xacro/go2/robot.xacro'" />
+
+    <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+    args="-urdf -model $(arg robot_name) -param robot_description $(arg robot_position) "/>
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher">
+      <param name="publish_frequency" type="double" value="30.0"/>
+      <!--<param name="tf_prefix" type="string" value="$(arg robot_name)"/>-->
+      <param name="use_sim_time" value="true"/>
+    </node>
+
+
+    <!-- 加载官方控制器配置 -->
+    <rosparam file="$(find multi_robot_scenario)/config/robot_control.yaml" command="load"/>  <!-- 指定命名空间 -->
+
+    <!-- 启动控制器管理器 -->
+    <node pkg="controller_manager" type="controller_manager" name="controller_manager" output="screen">
+        <rosparam command="load" file="$(find multi_robot_scenario)/config/robot_control.yaml" />  <!-- 重复加载确保生效（可选）-->
+    </node>
+
+    <!-- 批量启动所有关节控制器（根据robot_control.yaml中的控制器名称） -->
+    <group ns="go2_gazebo">
+        <node pkg="controller_manager" type="spawner" name="spawn_controllers" output="screen"
+              args="joint_state_controller FL_hip_controller FL_thigh_controller FL_calf_controller 
+                    FR_hip_controller FR_thigh_controller FR_calf_controller 
+                    RL_hip_controller RL_thigh_controller RL_calf_controller 
+                    RR_hip_controller RR_thigh_controller RR_calf_controller
+                    " />
+    </group>
+
+    <!-- 启动关节状态发布器（若需要手动调整关节） -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" >
+        <param name="publish_frequency" type="double" value="100.0"/>
+    </node>
+
+    <!-- 启动 junior_ctrl 节点 -->
+    <node name="junior_ctrl_node" pkg="unitree_guide" type="junior_ctrl" output="screen" respawn="false">
+        <!-- 指定 robot_name 参数，这里以go2-->
+        <param name="robot_name" value="go2"  />
+    </node>
+
+    <!-- ============ 添加 EKF ============ -->
+    <!-- 启动 robot_pose_ekf 节点 -->
+    <!-- <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+        <param name="output_frame" value="odom"/>
+        <param name="base_footprint_frame" value="trunk"/>
+        <param name="freq" value="30.0"/>
+        <param name="sensor_timeout" value="1.0"/>
+        <param name="odom_used" value="true"/>
+        <param name="imu_used" value="true"/>
+        <param name="vo_used" value="false"/>
+        <param name="debug" value="false"/>
+        <param name="self_diagnose" value="false"/>
+        
+        <remap from="odom" to="/odom" />    
+        <remap from="imu_data" to="/trunk_imu" /> 
+    </node> -->
+    <!-- ============ 添加完成 ============ -->
+
+    <!-- 发布odom话题 -->
+    <!-- 这里是我自己写的，用来发布odom话题的，已经舍弃 -->
+    <!-- <node pkg="odom" type="Odom_exam" name="Odom_exam" output="screen">
+        <param name="robot_name" value="go2"  />
+    </node> -->
+
+</launch>
