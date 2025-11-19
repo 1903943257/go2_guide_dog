@@ -1,15 +1,16 @@
 <launch>
 
   <arg name="robot_name" default="go2" />
-  <arg name="robot_position" default="-x -0.0 -y 0.0 -z 0.01" />
+  <arg name="robot_position" default="-x 0.0 -y 0.0 -z 0.6" />
   <!-- 设置机器人名称 -->
   <param name="robot_name" value="go2"/>  
   <param name="/use_sim_time" value="true"/>
 
     <!-- 启动gazebo仿真环境 -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-      <arg name="world_name" value="$(find multi_robot_scenario)/launch/TD3.world"/>
-      <arg name="paused" value="false"/>
+      <!-- <arg name="world_name" value="$(find multi_robot_scenario)/launch/TD3.world"/> -->
+      <arg name="world_name" value="$(find multi_robot_scenario)/launch/long_room.world"/>
+      <arg name="paused" value="true"/>
       <arg name="use_sim_time" value="true"/>
       <arg name="gui" value="true"/>
       <arg name="headless" value="false"/>
@@ -58,6 +59,10 @@
         <!-- 指定 robot_name 参数，这里以go2-->
         <param name="robot_name" value="go2"  />
     </node>
+
+    <!-- rviz测试节点 -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find multi_robot_scenario)/launch/go2.rviz" />
+
 
     <!-- ============ 添加 EKF ============ -->
     <!-- 启动 robot_pose_ekf 节点 -->
