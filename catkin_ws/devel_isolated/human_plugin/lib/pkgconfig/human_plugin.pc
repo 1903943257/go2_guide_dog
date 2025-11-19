@@ -1,8 +1,0 @@
-prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/human_plugin
-
-Name: human_plugin
-Description: Description of human_plugin
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

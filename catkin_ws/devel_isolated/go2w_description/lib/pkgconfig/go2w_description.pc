@@ -1,8 +1,0 @@
-prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/go2w_description
-
-Name: go2w_description
-Description: Description of go2w_description
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

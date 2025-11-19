@@ -1,8 +1,0 @@
-prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel_isolated/go1_description
-
-Name: go1_description
-Description: Description of go1_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

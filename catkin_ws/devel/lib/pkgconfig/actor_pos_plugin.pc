@@ -1,8 +1,0 @@
-prefix=/home/sanshiqi/project/DRL-robot-navigation/catkin_ws/devel
-
-Name: actor_pos_plugin
-Description: Description of actor_pos_plugin
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
